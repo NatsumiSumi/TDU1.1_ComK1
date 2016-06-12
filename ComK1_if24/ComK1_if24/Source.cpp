@@ -2,18 +2,21 @@
 
 int main(void)
 {
-	unsigned int numh, numl, cra, tur;
+	int numh, numl, cra, tur;
 
 	printf("“ª‚Ì”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ \n");
-	scanf_s("%lf", numh);
+	scanf_s("%d", &numh);
 	printf("‘«‚Ì”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ \n");
-	scanf_s("%lf", numl);
+	scanf_s("%d", &numl);
 
-	if (numl % 2 = 0) {
+	if (numl%2<=0 && numl>=numh*2 && numl<=numh*4) {
 		tur = (numl - numh * 2) / 2;
 		cra = numh - tur;
-		printf("");
+		printf("’ß:%d‰H@‹T:%d•C \n", cra, tur);
 	}
 
+	else {
+		printf("ŒvZ‚Å‚«‚Ü‚¹‚ñ \n");
+	}
 	return 0;
 }
