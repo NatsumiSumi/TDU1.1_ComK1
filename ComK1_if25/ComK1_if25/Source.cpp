@@ -17,13 +17,13 @@ int main(void)
 
 	if (rot = 0) {
 		ans1 = (-numb + sqrt(pow(numb, 2.0) - 4 * numa*numc)) / (2 * numa);
-		printf("x=%.2lf", ans1);
+		printf("x=%.2lf \n", ans1);
 	}
 
 	else if (rot > 0) {
 		ans1 = (-numb + sqrt(pow(numb, 2.0) - 4 * numa*numc)) / (2 * numa);
 		ans2 = (-numb - sqrt(pow(numb, 2.0) - 4 * numa*numc)) / (2 * numa);
-		printf("x=%.2lf , %.2lf", ans1, ans2);
+		printf("x=%.2lf , %.2lf \n", ans1, ans2);
 	}
 
 	else {

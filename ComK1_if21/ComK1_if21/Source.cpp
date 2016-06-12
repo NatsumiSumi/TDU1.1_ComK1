@@ -10,8 +10,8 @@ int main(void)
 	scanf_s("%lf", &num2);
 	scanf_s("%lf", &num3);
 
-	if (num1 + num2 > num3 || num2 + num3 > num1 || num3 + num1 > num2) {
-		printf("–ÊÏ=%.2lf", sqrt((num1 + num2 + num3)*(-num1 + num2 + num3)*(num1 - num2 + num3)*(num1 + num2 - num3)) / 4);
+	if (num1 + num2 > num3 && num2 + num3 > num1 && num3 + num1 > num2) {
+		printf("–ÊÏ=%.2lf \n", sqrt((num1 + num2 + num3)*(-num1 + num2 + num3)*(num1 - num2 + num3)*(num1 + num2 - num3)) / 4);
 	}
 
 	else {
