@@ -7,8 +7,8 @@ int main(void) {
 	mon = 1;
 
 	while (mon <= 10000) {
-		day++;
 		mon = 2 * mon;
+		day++;
 	}
 
 	printf("1“ú‚É‚à‚ç‚¤‹àŠz‚ª1–œ‰~‚ð’´‚¦‚é‚Ì‚Í%d“ú–Ú‚Å‚· \n", day);

@@ -13,7 +13,7 @@ int main(void) {
 		ind++;
 	}
 
-	printf("%d!=%d", num, ans);
+	printf("%d!=%d \n", num, ans);
 
 	return 0;
 }
