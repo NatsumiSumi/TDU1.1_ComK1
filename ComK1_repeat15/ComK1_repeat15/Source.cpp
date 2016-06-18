@@ -6,7 +6,7 @@ int main(void) {
 	j = 1;
 	ans = 1;
 
-	while (i <= 114514) {
+	while (i <= 12) {
 		j = j*i;
 		ans = ans + (1 / j);
 		i++;

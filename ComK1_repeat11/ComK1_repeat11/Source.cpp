@@ -2,7 +2,7 @@
 
 int main(void) {
 	int day, mon;
-
+	
 	day = 1;
 	mon = 1;
 
