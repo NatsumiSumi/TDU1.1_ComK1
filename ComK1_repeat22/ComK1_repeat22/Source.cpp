@@ -5,15 +5,13 @@
 
 int main(void) {
 	int i = 0;
-	double x, s, c, t;
-	double rad = x*PI / 180.0;
+	double s, c, t;
 
 	while (i <= 90) {
-		i = x;
-		s = sin(rad);
-		c = cos(rad);
-		t = tan(rad);
-		printf("sin%d=%.4f \n", x, s);
+		s = sin(i*PI / 180.0);
+		c = cos(i*PI / 180.0);
+		t = tan(i*PI / 180.0);
+		printf("ƒÆ=%d: sinƒÆ=%.4f cosƒÆ=%.4f tanƒÆ=%.4f \n", i, s, c, t);
 		i++;
 	}
 
