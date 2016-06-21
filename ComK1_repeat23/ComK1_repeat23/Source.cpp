@@ -2,25 +2,26 @@
 
 int main(void) {
 	int a, b, c, d;
-	a = 100;
+
+	a = 0;
 	b = 0;
 	c = 0;
-	d = 0;
+	d = 100;
 
-	printf("50‰~ 10‰~ 5‰~ 1‰~ \n");
-
-	while (d >= 0 && d <= 2) {
-		while (c >= 0 && c <= 10) {
-			while (b >= 0 && b <= 20) {
-				a = 100 - b * 5;
+	if (a <= 2) {
+		while (b <= 10) {
+			while (c <= 20) {
+				while (d >= 0) {
+					printf("%d %d %d %d \n", a, b, c, d);
+					c++;
+					d = 100 - a * 50 - b * 10 - c * 5;
+				}
 				b++;
+				c = 100 - a * 50 - b * 10;
 			}
-			c = b / 2;
-			c++;
+			a++;
+			b = 100 - a * 50;
 		}
-		d = c / 5;
-		printf("%d %d %d %d \n", d, c, b, a);
-		d++;
 	}
 
 	return 0;
