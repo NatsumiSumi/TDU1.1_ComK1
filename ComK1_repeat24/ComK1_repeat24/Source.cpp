@@ -16,7 +16,7 @@ int main(void) {
 	scanf_s("%lf", &n);
 
 	while (n > i) {
-		enc = (r*(n - i) / n)*(r*(n - i) / n)*(h / n)*PI;
+		enc =pow((r*(n - i) / n),2.0)*(h / n)*PI;
 		ans = ans + enc;
 		i++;
 	}
