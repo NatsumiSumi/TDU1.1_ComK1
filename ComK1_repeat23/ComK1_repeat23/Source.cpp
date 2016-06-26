@@ -1,28 +1,42 @@
 #include <stdio.h>
 
-int main(void) {
-	int a, b, c, d;
+int main(void)
+{
+	int ONE;
+	int FIVE;
+	int TEN;
+	int FIFTY;
+	int SUM;
+	int COUNT = 0;
 
-	a = 0;
-	b = 0;
-	c = 0;
-	d = 100;
+	printf("50‰~ 10‰~ 5‰~ 1‰~ \n");
 
-	if (a <= 2) {
-		while (b <= 10) {
-			while (c <= 20) {
-				while (d >= 0) {
-					printf("%d %d %d %d \n", a, b, c, d);
-					c++;
-					d = 100 - a * 50 - b * 10 - c * 5;
+	for (FIFTY = 0; FIFTY <= 100; FIFTY += 50)
+	{
+		for (TEN = 0; TEN <= 100; TEN += 10)
+		{
+			for (FIVE = 0; FIVE <= 100; FIVE += 5)
+			{
+				for (ONE = 0; ONE <= 100; ONE++)
+				{
+					SUM = ONE + FIVE + TEN + FIFTY;
+
+					if (SUM == 100)
+					{
+						printf("%4d ",(FIFTY / 50));
+						printf("%4d ",(TEN/10));
+						printf("%3d ",(FIVE / 5));
+						printf("%3d",ONE);
+						putchar('\n');
+						COUNT++;
+					}
 				}
-				b++;
-				c = 100 - a * 50 - b * 10;
 			}
-			a++;
-			b = 100 - a * 50;
 		}
 	}
 
+	printf("‘g‚Ý‡‚í‚¹‘”‚Í%d’Ê‚è‚Å‚· \n",COUNT);
+
 	return 0;
+
 }

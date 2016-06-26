@@ -11,7 +11,7 @@ int main(void) {
 		s = sin(i*PI / 180.0);
 		c = cos(i*PI / 180.0);
 		t = tan(i*PI / 180.0);
-		printf("ƒÆ=%d: sinƒÆ=%.4f cosƒÆ=%.4f tanƒÆ=%.4f \n", i, s, c, t);
+		printf("ƒÆ=%d‹: sinƒÆ=%.4f cosƒÆ=%.4f tanƒÆ=%.4f \n", i, s, c, t);
 		i++;
 	}
 
