@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void) {
 	int mon;
@@ -21,7 +22,7 @@ int main(void) {
 	char sto3[16] = "アクアマリン";
 	char sto4[16] = "ダイヤモンド";
 	char sto5[16] = "エメラルド";
-	char sto6[16] = "ムーンストーン";
+	char sto6[16] = "パール";
 	char sto7[16] = "ルビー";
 	char sto8[16] = "ペリドット";
 	char sto9[16] = "サファイヤ";
@@ -32,6 +33,21 @@ int main(void) {
 	printf("何月ですか =>");
 	scanf_s("%d", &mon);
 
-	printf("%d月のスペルは%sです。 \n",mon,eng
+	switch (mon) {
+	case 1:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng1, sto1); break;
+	case 2:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng2,sto2); break;
+	case 3:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng3,sto3); break;
+	case 4:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng4,sto4); break;
+	case 5:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng5,sto5); break;
+	case 6:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng6,sto6); break;
+	case 7:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng7,sto7); break;
+	case 8:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng8,sto8); break;
+	case 9:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng9,sto9); break;
+	case 10:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng10,sto10); break;
+	case 11:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng11,sto11); break;
+	case 12:printf("%d月のスペルは%sです。 \n誕生石は%sです。 \n", mon, eng12,sto12); break;
+	default:printf("Error!!");
+	}
 
+	return 0;
 }
