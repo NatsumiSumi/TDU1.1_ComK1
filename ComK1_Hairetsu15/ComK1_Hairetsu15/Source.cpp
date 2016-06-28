@@ -11,12 +11,6 @@ int main(void) {
 	}
 
 	for (i = 0; i<10; ++i) {
-		printf("%d ", num[i]);
-	}
-	printf("\n");
-
-
-	for (i = 0; i<10; ++i) {
 		for (j = i + 1; j<10; ++j) {
 			if (num[i] < num[j]) {
 				tmp = num[i];
@@ -26,7 +20,6 @@ int main(void) {
 		}
 	}
 	
-
 	printf("•À‚Ñ‘Ö‚¦Œã: ");
 	for (i = 0; i<10; ++i){
 		printf("%d ", num[i]);
