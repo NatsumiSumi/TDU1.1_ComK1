@@ -23,7 +23,7 @@ int main(void) {
 		Rmon += money[i] / 10000 * 10000;
 		Ichiyou += (money[i] - Rmon) / 5000;
 		Rmon += (money[i] - Rmon) / 5000 * 5000;
-		Hideyo = (money[i] - Rmon) / 1000;
+		Hideyo += (money[i] - Rmon) / 1000;
 		Rmon += (money[i] - Rmon) / 1000 * 1000;
 		FHundred += (money[i] - Rmon) / 500;
 		Rmon += (money[i] - Rmon) / 500 * 500;
