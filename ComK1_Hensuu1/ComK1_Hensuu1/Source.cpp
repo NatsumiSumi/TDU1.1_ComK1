@@ -2,17 +2,21 @@
 
 int main(void)
 {
-	int num1, num2;
+	int base_length, height_length;
+	double space;
 
-	printf("三角形の底辺の長さを入力してください。\n");
+	/* 底辺の入力 */
+	printf("底辺の長さ：");
+	scanf_s("%d", &base_length);
+	/* 高さの入力 */
+	printf("高さ：");
+	scanf_s("%d", &height_length);
 
-	scanf("%d", &num1);
+	/* 三角形の面積の計算 */
+	space = ((double)base_length * (double)height_length) / 2;
 
-	printf("三角形の高さを入力してください。\n");
-
-	scanf("%d", &num2);
-
-	printf("三角形の面積は%dです。\n", num1*num2 / 2);
+	/* 計算結果の表示 */
+	printf("底辺%d、高さ%dの三角形の面積は%.1lf \n", base_length, height_length, space);
 
 	return 0;
 }
